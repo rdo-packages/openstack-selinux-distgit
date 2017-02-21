@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-5271b2f51787362d9d649e6c6186759590173e22	openstack/openstack-selinux-distgit-ptl
+# UUID          Group Name
+False 	Non-Interactive Users
+38eb8f789ebaf6eef7e852afef3333227cb64613       	openstack/openstack-selinux-distgit-core
+5271b2f51787362d9d649e6c6186759590173e22        	openstack/openstack-selinux-distgit-ptl
+global:Registered-Users		Registered Users
