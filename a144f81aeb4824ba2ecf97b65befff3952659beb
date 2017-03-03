@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5ac4a560_cf6ea196",
+        "filename": "openstack-selinux.spec",
+        "patchSetId": 7
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 363
+      },
+      "writtenOn": "2017-03-03T16:43:37Z",
+      "side": 1,
+      "message": "Is the intent that all tabs are replaced with spaces, or just on these lines?",
+      "parentUuid": "5ac4a560_2f5e35ea",
+      "revId": "a144f81aeb4824ba2ecf97b65befff3952659beb",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ac4a560_4f6371b1",
         "filename": "openstack-selinux.spec",
         "patchSetId": 7
