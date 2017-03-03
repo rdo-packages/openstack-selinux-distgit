@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac4a560_e44d44c6",
+        "filename": "openstack-selinux.spec",
+        "patchSetId": 6
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2017-03-03T00:11:29Z",
+      "side": 1,
+      "message": "Version is calculated from upstream, usually with PBR magic in Python setuptools based projects.",
+      "revId": "97a56a2709f612021724a9c0a7bbbba1954ed302",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
