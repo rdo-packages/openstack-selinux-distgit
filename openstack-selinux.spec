@@ -118,3 +118,4 @@ fi
 
 
 %changelog
+# REMOVEME: error caused by commit https://github.com/redhat-openstack/openstack-selinux/commit/b00b11d95f4a5c9a24271f4d9f6d6d2b0687ccf4
