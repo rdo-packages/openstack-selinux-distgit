@@ -116,5 +116,4 @@ fi
 %files devel
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
 
-
 %changelog
