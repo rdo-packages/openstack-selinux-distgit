@@ -14,8 +14,8 @@
 
 # Package information
 Name:                   openstack-selinux
-Version:                XXX
-Release:                XXX
+Version:                0.8.7
+Release:                1%{?dist}
 License:                GPLv2
 Group:                  System Environment/Base
 Summary:                SELinux Policies for OpenStack
@@ -117,3 +117,5 @@ fi
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
 
 %changelog
+* Tue Jun 06 2017 Alan Pevec <alan.pevec@redhat.com> 0.8.7-1
+- Update to 0.8.7
