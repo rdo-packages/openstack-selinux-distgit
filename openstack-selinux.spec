@@ -2,7 +2,7 @@
 # Some bits borrowed from the katello-selinux package
 
 %global moduletype       services
-%global modulenames      os-ovs os-swift os-nova os-neutron os-mysql os-glance os-rsync os-rabbitmq os-keepalived os-keystone os-haproxy os-mongodb os-ipxe os-redis os-cinder
+%global modulenames      os-ovs os-swift os-nova os-neutron os-mysql os-glance os-rsync os-rabbitmq os-keepalived os-keystone os-haproxy os-mongodb os-ipxe os-redis os-cinder os-httpd
 
 # Usage: _format var format
 #   Expand 'modulenames' into various formats as needed
