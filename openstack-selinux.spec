@@ -2,7 +2,7 @@
 # Some bits borrowed from the katello-selinux package
 
 %global moduletype       services
-%global modulenames      os-ovs os-swift os-nova os-neutron os-mysql os-glance os-rsync os-rabbitmq os-keepalived os-keystone os-haproxy os-mongodb os-ipxe os-redis os-cinder
+%global modulenames      os-ovs os-swift os-nova os-neutron os-mysql os-glance os-rsync os-rabbitmq os-keepalived os-keystone os-haproxy os-mongodb os-ipxe os-redis os-cinder os-httpd
 
 # Usage: _format var format
 #   Expand 'modulenames' into various formats as needed
@@ -14,7 +14,7 @@
 
 # Package information
 Name:                   openstack-selinux
-Version:                0.8.7
+Version:                0.8.9
 Release:                1%{?dist}
 License:                GPLv2
 Group:                  System Environment/Base
@@ -117,5 +117,9 @@ fi
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
 
 %changelog
+* Wed Sep 13 2017 Lon Hohberger <lhh@redhat.com> 0.8.9-1
+- Update to 0.8.9
+- Add os-httpd to installed modules list
+
 * Tue Jun 06 2017 Alan Pevec <alan.pevec@redhat.com> 0.8.7-1
 - Update to 0.8.7
