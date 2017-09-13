@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a961159_a03962da",
+        "filename": "openstack-selinux.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2017-09-13T17:38:46Z",
+      "side": 1,
+      "message": "For easier maintenance, let\u0027s keep this as a separate cherry-pick from rpm-master.",
+      "revId": "e1d79403341ca0c8b33fd56ad71cf8125fc5f0c0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
