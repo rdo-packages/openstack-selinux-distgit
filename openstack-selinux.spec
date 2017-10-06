@@ -2,19 +2,13 @@
 # Some bits borrowed from the katello-selinux package
 
 %global moduletype       services
-%global modulenames      os-ovs os-swift os-nova os-neutron os-mysql os-glance os-rsync os-rabbitmq os-keepalived os-keystone os-haproxy os-mongodb os-ipxe os-redis os-cinder os-httpd
-
-# Usage: _format var format
-#   Expand 'modulenames' into various formats as needed
-#   Format must contain '$x' somewhere to do anything useful
-%global _format() export %1=""; for x in %{modulenames}; do %1+=%2; %1+=" "; done;
 
 # Version of SELinux we were using
 %global selinux_policyver 3.13.1-102.el7
 
 # Package information
 Name:                   openstack-selinux
-Version:                0.8.9
+Version:                0.8.10
 Release:                1%{?dist}
 License:                GPLv2
 Group:                  System Environment/Base
@@ -27,8 +21,10 @@ Requires(post):         selinux-policy-targeted >= %{selinux_policyver}
 Requires(post):         policycoreutils
 Requires(post):         policycoreutils-python
 Requires(preun):        policycoreutils
+Requires:               container-selinux
 BuildRequires:          selinux-policy
 BuildRequires:          selinux-policy-devel
+BuildRequires:          git
 Source:                 https://github.com/redhat-openstack/%{name}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
 %description
@@ -55,31 +51,15 @@ AVC tests for %{name}
 
 
 %prep
-%setup -q
+%autosetup -Sgit
 
 %build
-make DATADIR="%{_datadir}" TARGETS="%{modulenames}"
+make DATADIR="%{_datadir}"
 
 %install
-install -d %{buildroot}%{_datadir}/%{name}/%{version}
-install -p -m 755 local_settings.sh %{buildroot}%{_datadir}/%{name}/%{version}
-
-# Install SELinux interfaces
-%_format INTERFACES $x.if
-install -d %{buildroot}%{_datadir}/selinux/devel/include/%{moduletype}
-install -p -m 644 $INTERFACES \
-        %{buildroot}%{_datadir}/selinux/devel/include/%{moduletype}
-
-# Install policy modules
-%_format MODULES $x.pp.bz2
-install -d %{buildroot}%{_datadir}/selinux/packages
-install -m 0644 $MODULES \
-        %{buildroot}%{_datadir}/selinux/packages
-
-# Test package files
-install -d %{buildroot}%{_datadir}/%{name}/%{version}/tests
-install -m 0644 tests/bz* %{buildroot}%{_datadir}/%{name}/%{version}/tests
-install -m 0755 tests/check_all %{buildroot}%{_datadir}/%{name}/%{version}/tests
+make DATADIR="%{buildroot}%{_datadir}" \
+     LOCALDIR="%{buildroot}%{_datadir}/%{name}/%{version}" \
+     install
 
 %post
 BINDIR=%{_bindir} \
@@ -87,7 +67,7 @@ SBINDIR=%{_sbindir} \
 LOCALSTATEDIR=%{_localstatedir} \
 DATADIR=%{_datadir} \
 SHAREDSTATEDIR=%{_sharedstatedir} \
-%{_datadir}/%{name}/%{version}/local_settings.sh -m "%{modulenames}" -q
+%{_datadir}/%{name}/%{version}/local_settings.sh -q
 
 
 %preun
@@ -97,7 +77,7 @@ SBINDIR=%{_sbindir} \
 LOCALSTATEDIR=%{_localstatedir} \
 DATADIR=%{_datadir} \
 SHAREDSTATEDIR=%{_sharedstatedir} \
-%{_datadir}/%{name}/%{version}/local_settings.sh -xm "%{modulenames}" -q
+%{_datadir}/%{name}/%{version}/local_settings.sh -x -q
 fi
 
 
@@ -117,6 +97,10 @@ fi
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
 
 %changelog
+* Mon Oct 09 2017 Lon Hohberger <lon@redhat.com> 0.8.10-1
+- Update to 0.8.10
+- Simplify specfile to use 0.8.10's install makefile target
+
 * Wed Sep 13 2017 Lon Hohberger <lhh@redhat.com> 0.8.9-1
 - Update to 0.8.9
 - Add os-httpd to installed modules list
