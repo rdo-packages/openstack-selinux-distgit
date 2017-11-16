@@ -8,7 +8,7 @@
 
 # Package information
 Name:                   openstack-selinux
-Version:                0.8.10
+Version:                0.8.11
 Release:                1%{?dist}
 License:                GPLv2
 Group:                  System Environment/Base
@@ -97,6 +97,9 @@ fi
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
 
 %changelog
+* Thu Nov 16 2017 Lon Hohberger <lon@redhat.com> 0.8.11-1
+- Update to 0.8.11
+
 * Mon Oct 09 2017 Lon Hohberger <lon@redhat.com> 0.8.10-1
 - Update to 0.8.10
 - Simplify specfile to use 0.8.10's install makefile target
