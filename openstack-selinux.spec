@@ -8,7 +8,7 @@
 
 # Package information
 Name:                   openstack-selinux
-Version:                0.8.11
+Version:                0.8.13
 Release:                1%{?dist}
 License:                GPLv2
 Group:                  System Environment/Base
@@ -97,6 +97,9 @@ fi
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
 
 %changelog
+* Mon Jan 08 2018 Lon Hohberger <lon@redhat.com> 0.8.13-1
+- Update to 0.8.13
+
 * Thu Nov 16 2017 Lon Hohberger <lon@redhat.com> 0.8.11-1
 - Update to 0.8.11
 
