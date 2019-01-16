@@ -19,9 +19,10 @@ Requires:               policycoreutils
 Requires(post):         selinux-policy-base >= %{selinux_policyver}
 Requires(post):         selinux-policy-targeted >= %{selinux_policyver}
 Requires(post):         policycoreutils
-Requires(post):         policycoreutils-python
 %if 0%{?fedora} || 0%{?rhel} > 7
 Requires(post):         policycoreutils-python-utils
+%else
+Requires(post):         policycoreutils-python
 %endif
 Requires(preun):        policycoreutils
 Requires:               container-selinux
