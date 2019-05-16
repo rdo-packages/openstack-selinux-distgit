@@ -46,7 +46,11 @@ Development files (interfaces) for %{name}
 
 %package test
 Summary:                AVC Tests for %{name}
+%if 0%{?fedora} || 0%{?rhel} > 7
+Requires:               policycoreutils-python-utils
+%else
 Requires:               policycoreutils-python
+%endif
 Requires:               bash
 Requires:               %{name} = %{version}-%{release}
 
