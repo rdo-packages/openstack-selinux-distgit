@@ -28,6 +28,7 @@ Requires(preun):        policycoreutils
 Requires:               container-selinux
 BuildRequires:          selinux-policy
 BuildRequires:          selinux-policy-devel
+BuildRequires:          container-selinux
 BuildRequires:          git
 Source:                 https://github.com/redhat-openstack/%{name}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
