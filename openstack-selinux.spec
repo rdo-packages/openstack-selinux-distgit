@@ -97,6 +97,7 @@ fi
 %dir %{_datadir}/%{name}/%{version}/tests
 %attr(0755,root,root) %{_datadir}/%{name}/%{version}/tests/check_all
 %attr(0644,root,root) %{_datadir}/%{name}/%{version}/tests/bz*
+%attr(0644,root,root) %{_datadir}/%{name}/%{version}/tests/lp*
 
 %files devel
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
