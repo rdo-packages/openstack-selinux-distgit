@@ -105,3 +105,4 @@ fi
 * Thu Mar 28 2019 RDO <dev@lists.rdoproject.org> 0.8.18-1
 - Update to 0.8.18
 
+# REMOVEME: error caused by commit https://github.com/redhat-openstack/openstack-selinux/commit/a4f6185f76e130b2f61f840050467bf37199d141
