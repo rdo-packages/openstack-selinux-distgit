@@ -61,6 +61,8 @@ AVC tests for %{name}
 
 %prep
 %autosetup -Sgit
+# Create fake lp file if there is none is tests directory
+[[ ! $(find tests -type f -name lp* | grep -q '.*') ]] && touch tests/lpnoop
 
 %build
 make DATADIR="%{_datadir}"
@@ -69,6 +71,9 @@ make DATADIR="%{_datadir}"
 make DATADIR="%{buildroot}%{_datadir}" \
      LOCALDIR="%{buildroot}%{_datadir}/%{name}/%{version}" \
      install
+if [ ! $(grep '${INSTALL} -m 0644 tests/lp*' Makefile) ]; then
+install -m 0644 tests/lp* %{buildroot}%{_datadir}/%{name}/%{version}/tests
+fi
 
 %post
 BINDIR=%{_bindir} \
