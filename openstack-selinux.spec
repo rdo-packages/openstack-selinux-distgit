@@ -19,11 +19,7 @@ Requires:               policycoreutils
 Requires(post):         selinux-policy-base >= %{selinux_policyver}
 Requires(post):         selinux-policy-targeted >= %{selinux_policyver}
 Requires(post):         policycoreutils
-%if 0%{?fedora} || 0%{?rhel} > 7
 Requires(post):         policycoreutils-python-utils
-%else
-Requires(post):         policycoreutils-python
-%endif
 Requires(preun):        policycoreutils
 Requires:               container-selinux
 BuildRequires:          selinux-policy
@@ -47,11 +43,7 @@ Development files (interfaces) for %{name}
 
 %package test
 Summary:                AVC Tests for %{name}
-%if 0%{?fedora} || 0%{?rhel} > 7
 Requires:               policycoreutils-python-utils
-%else
-Requires:               policycoreutils-python
-%endif
 Requires:               bash
 Requires:               %{name} = %{version}-%{release}
 
