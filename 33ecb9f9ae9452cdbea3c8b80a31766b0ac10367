@@ -1,0 +1,9 @@
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Tue, 16 Jun 2020 08:10:36 +0000
+Reviewed-on: https://review.rdoproject.org/r/28084
+Project: openstack/openstack-selinux-distgit
+Branch: refs/heads/train-rdo
