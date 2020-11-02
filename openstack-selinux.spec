@@ -8,8 +8,8 @@
 
 # Package information
 Name:                   openstack-selinux
-Version:                XXX
-Release:                XXX
+Version:                0.8.24
+Release:                1%{?dist}
 License:                GPLv2
 Group:                  System Environment/Base
 Summary:                SELinux Policies for OpenStack
@@ -99,3 +99,5 @@ fi
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
 
 %changelog
+* Mon Nov 02 2020 Tobias Urdin <tobias.urdin@binero.com> 0.8.24-1
+- Update to 0.8.24
