@@ -1,0 +1,9 @@
+Code-Review+1: Lon Hohberger <lon@metamorphism.com>
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Workflow+1: Yatin Karel <ykarel@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Wed, 31 Mar 2021 07:45:39 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/openstack-selinux-distgit/+/32889
+Project: openstack/openstack-selinux-distgit
+Branch: refs/heads/wallaby-rdo
