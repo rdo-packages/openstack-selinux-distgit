@@ -1,0 +1,9 @@
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Workflow+1: Yatin Karel <ykarel@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Mon, 24 May 2021 06:26:15 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/openstack-selinux-distgit/+/33793
+Project: openstack/openstack-selinux-distgit
+Branch: refs/heads/wallaby-rdo
