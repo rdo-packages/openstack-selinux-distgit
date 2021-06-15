@@ -1,0 +1,9 @@
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Tue, 15 Jun 2021 04:53:02 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/openstack-selinux-distgit/+/34094
+Project: openstack/openstack-selinux-distgit
+Branch: refs/heads/victoria-rdo
