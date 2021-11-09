@@ -99,3 +99,4 @@ fi
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
 
 %changelog
+# REMOVEME: error caused by commit https://github.com/redhat-openstack/openstack-selinux/commit/7211283cb180f62fddbfc5d06b59cb95c442060f
