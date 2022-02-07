@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "068fc9ec_b4cc6cce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 254
+      },
+      "writtenOn": "2022-02-07T09:19:58Z",
+      "side": 1,
+      "message": "The error in the logs seems unrelated to the patch?\n\nError: \n Problem 1: conflicting requests\n  - nothing provides python3.9dist(greenlet) \u003e\u003d 0.3 needed by python3-eventlet-0.31.1-1.el9s.noarch\n Problem 2: cannot install the best candidate for the job\n  - nothing provides python3.9dist(greenlet) needed by python3-sqlalchemy-1.4.23-1.1.el9s.x86_64\n\nAdditionally, would it be possible to add me to automatic list of reviewers like Lon and Ryan are (and probably remove Ryan by now)? I\u0027m not sure where to set that.",
+      "revId": "554111cc453c58e18654224dc70e39a78c3c0494",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
