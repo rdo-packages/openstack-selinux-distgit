@@ -8,7 +8,7 @@
 
 # Package information
 Name:                   openstack-selinux
-Version:                0.8.30
+Version:                0.8.31
 Release:                1%{?dist}
 License:                GPLv2
 Group:                  System Environment/Base
@@ -99,6 +99,9 @@ fi
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
 
 %changelog
+* Wed Jun 08 2022 RDO <dev@lists.rdoproject.org> 0.8.31-1
+- Update to 0.8.31
+
 * Fri Mar 25 2022 RDO <dev@lists.rdoproject.org> 0.8.30-1
 - Update to 0.8.30
 
