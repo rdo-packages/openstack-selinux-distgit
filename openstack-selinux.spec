@@ -81,6 +81,13 @@ SHAREDSTATEDIR=%{_sharedstatedir} \
 %{_datadir}/%{name}/%{version}/local_settings.sh -x -q
 fi
 
+%verify
+BINDIR=%{_bindir} \
+SBINDIR=%{_sbindir} \
+LOCALSTATEDIR=%{_localstatedir} \
+DATADIR=%{_datadir} \
+SHAREDSTATEDIR=%{_sharedstatedir} \
+%{_datadir}/%{name}/%{version}/local_settings.sh -V
 
 %files
 %license COPYING
