@@ -16,6 +16,29 @@
       "message": "ok, so the depends-on referencing a github pr doesn\u0027t work, and seems to block the jobs. Good to know :).",
       "revId": "10b1b16e959d1e287061ad6ee40eeeb1de53710e",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8352468b_b3e2e09f",
+        "filename": "openstack-selinux.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-06-15T13:42:03Z",
+      "side": 1,
+      "message": "I\u0027m not sure this makes what you expect, actually this is the first time i see %verify and it seems it\u0027s including this in %preun which is incorrect.\n\nDid you get %verify option documented somewhere?",
+      "range": {
+        "startLine": 84,
+        "startChar": 0,
+        "endLine": 84,
+        "endChar": 1
+      },
+      "revId": "10b1b16e959d1e287061ad6ee40eeeb1de53710e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
