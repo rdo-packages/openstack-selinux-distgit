@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d905d3d4_7886483e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 547
+      },
+      "writtenOn": "2022-06-15T13:31:23Z",
+      "side": 1,
+      "message": "ok, so the depends-on referencing a github pr doesn\u0027t work, and seems to block the jobs. Good to know :).",
+      "revId": "10b1b16e959d1e287061ad6ee40eeeb1de53710e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
