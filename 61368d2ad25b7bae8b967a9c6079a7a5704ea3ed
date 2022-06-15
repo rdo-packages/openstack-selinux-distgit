@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6db3166_7f7a39cf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 547
+      },
+      "writtenOn": "2022-06-15T11:15:08Z",
+      "side": 1,
+      "message": "recheck\n\ndepends-on merged, though I doubt it actually blocks anything?",
+      "revId": "61368d2ad25b7bae8b967a9c6079a7a5704ea3ed",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
