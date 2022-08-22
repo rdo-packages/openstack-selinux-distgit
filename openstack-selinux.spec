@@ -8,8 +8,8 @@
 
 # Package information
 Name:                   openstack-selinux
-Version:                XXX
-Release:                XXX
+Version:                0.8.33
+Release:                1%{?dist}
 License:                GPLv2
 Group:                  System Environment/Base
 Summary:                SELinux Policies for OpenStack
@@ -106,3 +106,5 @@ SHAREDSTATEDIR=%{_sharedstatedir} \
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
 
 %changelog
+* Mon Aug 22 2022 Gregory Thiemonge <gthiemon@redhat.com> 0.8.33-1
+- Update to 0.8.33
