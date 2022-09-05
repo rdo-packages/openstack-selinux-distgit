@@ -16,6 +16,23 @@
       "message": "I asked offline to bump to this release instead of the initial 0.8.33 in order to ensure this correction was in:\nhttps://github.com/redhat-openstack/openstack-selinux/commit/0903db99e41baca4dd5ff960db13dc2d63a7cf11\n\nIf it wasn\u0027t, we\u0027d probably face a major breakage of the install, due to the new libselinux feature in use.",
       "revId": "6a9445b7974b3a86176d2be36b47dce8838d7075",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d19231a7_6b136319",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-09-05T13:25:30Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "6a9445b7974b3a86176d2be36b47dce8838d7075",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
