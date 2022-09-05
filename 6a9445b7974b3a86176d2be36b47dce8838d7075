@@ -1,0 +1,10 @@
+Code-Review+1: User karolinku <kkula@redhat.com>
+Code-Review+1: Cédric Jeanneret <cjeanner+github@redhat.com>
+Code-Review+2: Joel Capitao <jcapitao@redhat.com>
+Workflow+1: Joel Capitao <jcapitao@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Mon, 05 Sep 2022 13:46:11 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/openstack-selinux-distgit/+/44609
+Project: openstack/openstack-selinux-distgit
+Branch: refs/heads/yoga-rdo
