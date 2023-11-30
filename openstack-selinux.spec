@@ -108,3 +108,4 @@ SHAREDSTATEDIR=%{_sharedstatedir} \
 %changelog
 * Mon Aug 22 2022 Gregory Thiemonge <gthiemon@redhat.com> 0.8.34-1
 - Update to 0.8.34
+# REMOVEME: error caused by commit https://github.com/redhat-openstack/openstack-selinux/commit/165e251bebcc7b110a324893b98e6ede2832d2e7
