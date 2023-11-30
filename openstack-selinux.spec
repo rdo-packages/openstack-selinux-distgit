@@ -8,7 +8,7 @@
 
 # Package information
 Name:                   openstack-selinux
-Version:                0.8.34
+Version:                0.8.37
 Release:                1%{?dist}
 License:                GPLv2
 Group:                  System Environment/Base
@@ -101,10 +101,14 @@ SHAREDSTATEDIR=%{_sharedstatedir} \
 %attr(0755,root,root) %{_datadir}/%{name}/%{version}/tests/check_all
 %attr(0644,root,root) %{_datadir}/%{name}/%{version}/tests/bz*
 %attr(0644,root,root) %{_datadir}/%{name}/%{version}/tests/lp*
+%attr(0644,root,root) %{_datadir}/%{name}/%{version}/tests/osprh*
 
 %files devel
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
 
 %changelog
+* Fri Dec 01 2023 RDO <dev@lists.rdoproject.org> 0.8.37-1
+- Update to 0.8.37
+
 * Mon Aug 22 2022 Gregory Thiemonge <gthiemon@redhat.com> 0.8.34-1
 - Update to 0.8.34
