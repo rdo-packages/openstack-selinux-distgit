@@ -62,6 +62,10 @@ make DATADIR="%{buildroot}%{_datadir}" \
      LOCALDIR="%{buildroot}%{_datadir}/%{name}/%{version}" \
      install
 
+if [ ! -f "%{buildroot}%{_datadir}/%{name}/%{version}/tests/rdo310" ];then
+     touch %{buildroot}%{_datadir}/%{name}/%{version}/tests/rdo310
+fi
+
 %post
 BINDIR=%{_bindir} \
 SBINDIR=%{_sbindir} \
@@ -102,6 +106,7 @@ SHAREDSTATEDIR=%{_sharedstatedir} \
 %attr(0644,root,root) %{_datadir}/%{name}/%{version}/tests/bz*
 %attr(0644,root,root) %{_datadir}/%{name}/%{version}/tests/lp*
 %attr(0644,root,root) %{_datadir}/%{name}/%{version}/tests/osprh*
+%attr(0644,root,root) %{_datadir}/%{name}/%{version}/tests/rdo*
 
 %files devel
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
