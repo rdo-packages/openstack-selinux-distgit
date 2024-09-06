@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "844da9c5_a739da8b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 254
+      },
+      "writtenOn": "2024-09-06T14:44:05Z",
+      "side": 1,
+      "message": "A new type of test file was added, I imagine we will need something similar to https://review.rdoproject.org/r/c/openstack/openstack-selinux-distgit/+/50942",
+      "revId": "e3b5ef4d3980935bc8ad11eaeaa98f7864f29155",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
