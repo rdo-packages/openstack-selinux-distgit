@@ -116,3 +116,4 @@ SHAREDSTATEDIR=%{_sharedstatedir} \
 * Tue Mar 14 2023 RDO <dev@lists.rdoproject.org> 0.8.36-1
 - Update to 0.8.36
 
+# REMOVEME: error caused by commit https://github.com/redhat-openstack/openstack-selinux/commit/6242e2976b746e31e266d8c525d041cb4e9bd387
