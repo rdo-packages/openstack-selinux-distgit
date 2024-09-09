@@ -102,6 +102,7 @@ SHAREDSTATEDIR=%{_sharedstatedir} \
 %attr(0644,root,root) %{_datadir}/%{name}/%{version}/tests/bz*
 %attr(0644,root,root) %{_datadir}/%{name}/%{version}/tests/lp*
 %attr(0644,root,root) %{_datadir}/%{name}/%{version}/tests/osprh*
+%attr(0644,root,root) %{_datadir}/%{name}/%{version}/tests/rdo310*
 
 %files devel
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
@@ -109,4 +110,3 @@ SHAREDSTATEDIR=%{_sharedstatedir} \
 %changelog
 * Tue Apr 16 2024 RDO <dev@lists.rdoproject.org> 0.8.39-1
 - Update to 0.8.39
-
