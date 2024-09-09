@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5bd7b35e_c5aabd3d",
+        "filename": "openstack-selinux.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 682
+      },
+      "writtenOn": "2024-09-09T12:41:29Z",
+      "side": 1,
+      "message": "As we expect more tests files in the future with the similar pattern, probably using `rdo*` is a better approach.",
+      "range": {
+        "startLine": 105,
+        "startChar": 59,
+        "endLine": 105,
+        "endChar": 66
+      },
+      "revId": "457a151b84510e94da2a303dfc6252412c405e9b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
