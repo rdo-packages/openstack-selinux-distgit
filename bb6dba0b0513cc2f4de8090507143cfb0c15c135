@@ -68,6 +68,24 @@
       "parentUuid": "f8f947d7_0dad2577",
       "revId": "bb6dba0b0513cc2f4de8090507143cfb0c15c135",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e607b875_d0612637",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2024-09-18T14:32:27Z",
+      "side": 1,
+      "message": "CBS builds are based on the tag in the Release, in this case 0.8.39. It\u0027d be good to get a new tag with this patch. Otherwise, we can do it this change in a backwards compatible way by creating an empty \"rdo\" directory if it does not exist.\n\nAnd yes, it\u0027d be good to tho the change in rpm-master and cherry-pick it.",
+      "parentUuid": "ad86ad3d_a1361e98",
+      "revId": "bb6dba0b0513cc2f4de8090507143cfb0c15c135",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
