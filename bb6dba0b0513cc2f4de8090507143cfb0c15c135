@@ -86,6 +86,24 @@
       "parentUuid": "ad86ad3d_a1361e98",
       "revId": "bb6dba0b0513cc2f4de8090507143cfb0c15c135",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5526fd75_d59dca79",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2024-09-18T14:34:46Z",
+      "side": 1,
+      "message": "The change was proposed and merged in rpm-master in the meantime [1]\nWe asked Julie to issue a new release in [2]\n\n[1] https://review.rdoproject.org/r/c/openstack/openstack-selinux-distgit/+/54366\n[2] https://issues.redhat.com/browse/RDO-268",
+      "parentUuid": "e607b875_d0612637",
+      "revId": "bb6dba0b0513cc2f4de8090507143cfb0c15c135",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
