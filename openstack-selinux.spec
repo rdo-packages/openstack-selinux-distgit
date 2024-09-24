@@ -8,8 +8,8 @@
 
 # Package information
 Name:                   openstack-selinux
-Version:                XXX
-Release:                XXX
+Version:                0.8.40
+Release:                1%{?dist}
 License:                GPLv2
 Group:                  System Environment/Base
 Summary:                SELinux Policies for OpenStack
@@ -108,3 +108,6 @@ SHAREDSTATEDIR=%{_sharedstatedir} \
 %attr(0644,root,root) %{_datadir}/selinux/devel/include/%{moduletype}/*.if
 
 %changelog
+* Tue Sep 24 2024 RDO <dev@lists.rdoproject.org> 0.8.40-1
+- Update to 0.8.40
+
