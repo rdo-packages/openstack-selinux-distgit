@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a9df5621_283865c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2024-11-27T11:53:55Z",
+      "side": 1,
+      "message": "should be fixed with https://review.rdoproject.org/r/c/openstack/openstack-selinux-distgit/+/55596",
+      "revId": "bb4afe8a0be4ee3220f10a731e59ca0830ccab4b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
